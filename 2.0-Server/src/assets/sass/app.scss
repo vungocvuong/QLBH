@@ -1,0 +1,18 @@
+
+.table-customer {
+    thead {
+        tr {
+            th {
+                color: $brand-danger;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.button-image-customer {
+    width: 25px !important;
+    height: 25px !important;
+    margin-left: 20px;
+    margin-right: 20px;
+}
