@@ -4,25 +4,35 @@
             <div class="col-md-12">
                 <div class="card">
                     <div class="card-content table-responsive">
-                        <table class="table table-customer">
-                            <thead>
+                        <table class="table">
+                            <thead class="text-danger">
                                 <tr>
                                     <th>Khách hàng</th>
                                     <th>SĐT</th>
-                                    <th>Ngày sinh</th>
+                                    <th>Địa chỉ</th>
+                                    <th>Loại KH</th>
                                     <th>Mua lần cuối</th>
-                                    <th> </th>
+                                    <th></th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr *ngFor="let menuItem of customers">
-                                    <td>Đăng Thu Trang</td>
+                                    <td>
+                                        <tr>
+                                            <td>
+                                                <img class="image-small margin-right-small img-circle" src="https://scontent.fhan3-1.fna.fbcdn.net/v/t1.0-1/p160x160/17759930_1880925222123674_8462300566271354203_n.jpg?oh=80aff32da05c057650758e4cae9e9a29&oe=5A14C074" alt="avarta">
+                                            </td>
+                                            <td> Đăng Thu Trang </td>
+                                        </tr>
+                                    </td>
                                     <td>0976954188</td>
-                                    <td>04/09/1992</td>
+                                    <td class="column-large">
+                                        Số 72A Nguyễn Trãi, P. Thượng Đình, Q. Thanh Xuân, Tp. Hà Nội
+                                    <td>Kim cương</td>
                                     <td>04/09/1992</td>
                                     <td>
-                                        <img class="button-image-customer" src="../src/assets/img/icon-fb-messenger.png" alt="Facebook icon">
-                                        <img class="button-image-customer" src="../src/assets/img/icon-facebook.png" alt="Facebook icon">
+                                        <img class="button-image margin-right-small" src="../src/assets/img/icon-fb-messenger.png" alt="Facebook icon">
+                                        <img class="button-image" src="../src/assets/img/icon-facebook.png" alt="Facebook icon">
                                     </td>
                                 </tr>
                             </tbody>

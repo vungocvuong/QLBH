@@ -12,5 +12,10 @@ export class CustomerComponent implements OnInit {
 
   ngOnInit() {
     this.customers = ["1", "2", "3", "4", "5"];
+
+    for (var i = 0; i < 3; i++) {
+      this.customers.push("a")
+    }
+
   }
 }

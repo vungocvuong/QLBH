@@ -10,9 +10,24 @@
     }
 }
 
-.button-image-customer {
+.button-image {
     width: 25px !important;
     height: 25px !important;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 5px;
 }
+
+.image-small {
+    width: 40px !important;
+    height: 40px !important;
+}
+
+.column-large {
+    max-width: 400px !important;
+}
+
+.margin-right-small {
+    margin-right: 15px;
+}
+
+
+
