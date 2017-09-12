@@ -10,33 +10,28 @@ import { ComponentsModule } from './components/components.module';
 import { AppComponent } from './app.component';
 
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { UserProfileComponent } from './user-profile/user-profile.component';
-import { TableListComponent } from './table-list/table-list.component';
-import { TypographyComponent } from './typography/typography.component';
-import { IconsComponent } from './icons/icons.component';
-import { MapsComponent } from './maps/maps.component';
-import { NotificationsComponent } from './notifications/notifications.component';
-import { UpgradeComponent } from './upgrade/upgrade.component';
+import { ProductComponent } from './product/product.component';
+import { SaleInvoiceComponent } from './sale-invoice/sale-invoice.component';
+import { PurchaseInvoiceComponent } from './purchase-invoice/purchase-invoice.component';
+import { CustomerComponent } from './customer/customer.component';
+import { UserComponent } from './user/user.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
-    UserProfileComponent,
-    TableListComponent,
-    TypographyComponent,
-    IconsComponent,
-    MapsComponent,
-    NotificationsComponent,
-    UpgradeComponent,
-
+    ProductComponent,
+    SaleInvoiceComponent,
+    PurchaseInvoiceComponent,
+    CustomerComponent,
+    UserComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
     ComponentsModule,
-RouterModule,
+    RouterModule,
     AppRoutingModule
   ],
   providers: [],
