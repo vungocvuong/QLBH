@@ -29,8 +29,13 @@
                                     <td>{{cus.phone}}</td>
                                     <td class="column-large">
                                         {{cus.address}}
-                                        <td>{{cus.customerType}}</td>
-                                        <td>{{cus.lastBought}}</td>
+                                        <td [ngSwitch]="cus.customerType" >
+                                            <img class="customer-type-image" *ngSwitchCase=0 src="../src/assets/img/icon-not-bought.png" alt="Chưa mua">
+                                            <img class="customer-type-image" *ngSwitchCase=1 src="../src/assets/img/icon-silver.png" alt="Bạc">
+                                            <img class="customer-type-image" *ngSwitchCase=2 src="../src/assets/img/icon-gold.png" alt="Vàng">
+                                            <img class="customer-type-image" *ngSwitchCase=3 src="../src/assets/img/icon-diamond.png" alt="Kim cương">
+                                        </td>
+                                        <td>{{cus.lastBought | date: 'HH:mm dd/MM/yyyy'}}</td>
                                         <td>
                                             <img class="button-image margin-right-small" src="../src/assets/img/icon-fb-messenger.png" alt="Facebook icon">
                                             <img class="button-image" src="../src/assets/img/icon-facebook.png" alt="Facebook icon">

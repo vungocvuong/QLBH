@@ -11,13 +11,13 @@ export class CustomerComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    for (var i = 0; i < 5; i++) {
+    for (var i = 0; i < 10; i++) {
       var cus = new Customer();
       cus.id = i.toString();
       cus.name = "Dang Thu Trang";
       cus.address = "Số 72A Nguyễn Trãi, P. Thượng Đình, Q. Thanh Xuân, Tp. Hà Nội";
       cus.phone = "0967245018";
-      cus.customerType = "Kim cuong";
+      cus.customerType = i%4;
       cus.lastBought = Date.now();
       cus.facebook = new FacebookInfo(
         "Vu Ngoc Vuong",

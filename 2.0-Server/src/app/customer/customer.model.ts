@@ -4,7 +4,7 @@ export class Customer {
     public name: string;
     public address: string;
     public phone: string;
-    public customerType: string;
+    public customerType: number;
     public lastBought: number;
     public facebook: FacebookInfo;
 }
