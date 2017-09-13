@@ -18,15 +18,17 @@
                             <tbody>
                                 <tr *ngFor="let cus of customers">
                                     <td>
-                                        <tr>
-                                            <td>
-                                                <img class="image-small margin-right-small img-circle" src={{cus.facebook.avarta}}
-                                                    alt="avarta">
-                                            </td>
-                                            <td>{{cus.facebook.name}} </td>
-                                        </tr>
+                                        <a class="text-normal" [routerLink]="['/customer', cus.id]">
+                                            <tr>
+                                                <td>
+                                                    <img class="image-small margin-right-small img-circle" src={{cus.facebook.avarta}}
+                                                        alt="avarta">
+                                                </td>
+                                                <td> {{cus.facebook.name}} </td>
+                                            </tr>
+                                        </a>
                                     </td>
-                                    <td>{{cus.phone}}</td>
+                                    <td class="Header 5">{{cus.phone}}</td>
                                     <td class="column-large">
                                         {{cus.address}}
                                         <td [ngSwitch]="cus.customerType" >

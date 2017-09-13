@@ -7,17 +7,23 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { ProductComponent } from './product/product.component';
 import { SaleInvoiceComponent } from './sale-invoice/sale-invoice.component';
 import { PurchaseInvoiceComponent } from './purchase-invoice/purchase-invoice.component';
-import { CustomerComponent } from './customer/customer.component';
 import { UserComponent } from './user/user.component';
 
+import { CustomerComponent } from './customer/customer.component';
+import { CustomerDetailComponent } from './customer/customer-detail/customer-detail.component';
+
+
 const routes: Routes = [
+  { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
   { path: 'dashboard', component: DashboardComponent },
   { path: 'product', component: ProductComponent },
   { path: 'sale-invoice', component: SaleInvoiceComponent },
   { path: 'purchase-invoice', component: PurchaseInvoiceComponent },
-  { path: 'customer', component: CustomerComponent },
   { path: 'user', component: UserComponent },
-  { path: '', redirectTo: 'dashboard', pathMatch: 'full' }
+
+  { path: 'customer', component: CustomerComponent },
+  { path: 'customer/:id', component: CustomerDetailComponent },
+
 ];
 
 @NgModule({
